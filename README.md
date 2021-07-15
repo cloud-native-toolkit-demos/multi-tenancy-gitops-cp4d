@@ -35,6 +35,12 @@ while ! kubectl wait --for=condition=Established crd applications.argoproj.io; d
 ```
 
 Once ArgoCD is deploy get the `admin` password
+
+- For OpenShift 4.7+,
+```
+oc extract secrets/openshift-cluster-cluster --keys=admin.password -n openshift-gitops --to=-
+```
+- For OpenShift 4.6,
 ```
 oc extract secrets/argocd-cluster-cluster --keys=admin.password -n openshift-gitops --to=-
 ```

@@ -23,11 +23,19 @@ resources:
 # IBM Entitlement Key for Cloud Pak for Business Automation Operator
 #- argocd/instances/shared-secrets.yaml
 
+# IBM Software - Cloud Pak for Data
+#- argocd/operators/
+#- argocd/operators/
+
+# Pre-req for Cloud Pak for Data
+# IBM Entitlement Key for Cloud Pak for Business Automation Operator
+- argocd/instances/shared-secrets.yaml
+
 # IBM Foundations / Common Services
-#- argocd/operators/ibm-foundations.yaml
+- argocd/operators/ibm-foundations.yaml
 
 # IBM Catalogs
-#- argocd/operators/ibm-catalogs.yaml
+- argocd/operators/ibm-catalogs.yaml
 
 # Required for IBM MQ
 #- argocd/instances/openldap.yaml
