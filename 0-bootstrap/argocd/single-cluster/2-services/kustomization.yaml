@@ -24,8 +24,8 @@ resources:
 #- argocd/instances/shared-secrets.yaml
 
 # IBM Software - Cloud Pak for Data
-#- argocd/operators/
-#- argocd/operators/
+- argocd/operators/ibm-cpd-platform-operator.yaml
+- argocd/operators/ibm-cpd-scheduling-operator.yaml
 
 # Pre-req for Cloud Pak for Data
 # IBM Entitlement Key for Cloud Pak for Business Automation Operator
