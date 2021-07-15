@@ -29,7 +29,7 @@ resources:
 
 # Pre-req for Cloud Pak for Data
 # IBM Entitlement Key for Cloud Pak for Business Automation Operator
-- argocd/instances/shared-secrets.yaml
+#- argocd/instances/shared-secrets.yaml
 
 # IBM Foundations / Common Services
 - argocd/operators/ibm-foundations.yaml
