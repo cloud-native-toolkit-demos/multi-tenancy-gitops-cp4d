@@ -26,6 +26,7 @@ resources:
 # IBM Software - Cloud Pak for Data
 - argocd/operators/ibm-cpd-platform-operator.yaml
 - argocd/operators/ibm-cpd-scheduling-operator.yaml
+- argocd/instances/ibm-cpd-instance.yaml
 
 # Pre-req for Cloud Pak for Data
 # IBM Entitlement Key for Cloud Pak for Business Automation Operator
