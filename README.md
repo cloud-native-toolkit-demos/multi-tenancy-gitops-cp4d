@@ -38,7 +38,7 @@ Once ArgoCD is deploy get the `admin` password
 
 - For OpenShift 4.7+,
 ```
-oc extract secrets/openshift-cluster-cluster --keys=admin.password -n openshift-gitops --to=-
+oc extract secrets/openshift-gitops-cluster --keys=admin.password -n openshift-gitops --to=-
 ```
 - For OpenShift 4.6,
 ```
