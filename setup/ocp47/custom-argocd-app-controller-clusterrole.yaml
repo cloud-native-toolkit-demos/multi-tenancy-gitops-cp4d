@@ -195,6 +195,12 @@ rules:
   - verbs:
       - '*'
     apiGroups:
+      - cpd.ibm.com
+    resources:
+      - ibmcpds
+  - verbs:
+      - '*'
+    apiGroups:
       - icp4a.ibm.com
     resources:
       - '*'
