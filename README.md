@@ -3,6 +3,8 @@
 ## Apply demo sealedsecret key to all clusters
 Download [sealed-secrets-ibm-demo-key.yaml](https://bit.ly/demo-sealed-master) and apply it to the cluster.
 ```
+oc new-project sealed-secrets
+
 oc apply -f sealed-secrets-ibm-demo-key.yaml
 
 oc delete pod -n sealed-secrets -l app.kubernetes.io/name=sealed-secrets
@@ -60,7 +62,7 @@ TARGET_CLUSTER=0-bootstrap/argocd/others/1-shared-cluster/bootstrap-cluster-1-ci
 TARGET_CLUSTER=0-bootstrap/argocd/others/1-shared-cluster/bootstrap-cluster-n-prod.yaml
 ```
 Now apply the profile
-```
+```bash
 echo TARGET_CLUSTER=${TARGET_CLUSTER}
 oc apply -n openshift-gitops -f ${TARGET_CLUSTER}
 ```
